@@ -710,11 +710,12 @@ textarea.input {
   border-radius: 37px;
   overflow: hidden;
   z-index: 0;
+  padding: 25px 15px 0 15px;
 }
 
 .speaker__name {
   font-weight: 600;
-  margin-bottom: 2.8125rem;
+  margin-bottom: 1.25rem;
 }
 
 .speaker__info-icon {
@@ -1527,10 +1528,6 @@ textarea.input {
 
   .menu__body {
     width: 100%;
-  }
-
-  .speaker__body {
-    padding: 20px 15px 0 15px;
   }
 }
 
