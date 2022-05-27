@@ -592,11 +592,38 @@ textarea.input {
 .intro {
   padding-top: 152px;
   padding-bottom: 58px;
+  text-align: center;
 }
 
 .intro__container {
   position: relative;
   max-width: 56.625rem;
+}
+
+.intro__img-wrapper {
+  max-width: 160px;
+  margin: 0 auto;
+  margin-bottom: 2.5rem;
+}
+
+.intro__img {
+  border-radius: 50%;
+}
+
+.intro__img img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+.intro__img-big {
+  width: 120px;
+}
+
+.intro__img-sm {
+  width: 100px;
+  margin-left: auto;
 }
 
 .intro__body {
@@ -612,7 +639,6 @@ textarea.input {
 }
 
 .intro__title {
-  position: relative;
   font-family: "DaysOne", sans-serif;
   font-size: 1.625rem;
   line-height: 1.3076923077;
@@ -982,8 +1008,8 @@ textarea.input {
     line-height: 1.2272727273;
   }
 
-  .intro {
-    text-align: center;
+  .intro__img-wrapper {
+    display: none;
   }
 
   .intro__label {
@@ -1111,6 +1137,7 @@ textarea.input {
   }
 
   .intro__title {
+    position: relative;
     font-size: 3.375rem;
     line-height: 1.2592592593;
     margin-bottom: 4.125rem;
@@ -1448,7 +1475,9 @@ textarea.input {
   }
 
   .intro__label {
-    margin-top: 20px;
+    position: absolute;
+    top: 45px;
+    left: 25px;
   }
 
   .intro__label span {
@@ -1529,6 +1558,12 @@ textarea.input {
   .menu__body {
     width: 100%;
   }
+
+  .intro {
+    min-height: 100vh;
+    padding-top: 110px;
+    text-align: center;
+  }
 }
 
 @media (min-width: 47.99875em) and (max-width: 75em) {
@@ -1537,6 +1572,7 @@ textarea.input {
   }
 
   .intro__title {
+    position: relative;
     font-size: 2.25rem;
     width: 65%;
     margin-left: auto;
